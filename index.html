@@ -1,10 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-	<meta charset="UTF-8">
-	<title>Books.Modern Developer</title>
+	<meta charset='UTF-8'>
+	<title>Books. Modern Developer</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,300italic|Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
+	<header>
+		<h1><span>Books. </span>Modern Developer</h1>
+		<p>The Largest Resource of Web and Mobile Development and Programming Books</p>
+		<form class='searc-bar' action='index.html' method='post'>
+			<input type='search' id='search' name='search' placeholder='Search Books by any keyword or title...'>
+			<button><i class="fa fa-search" aria-hidden="true"></i></button>
+		</form>
+	</header>
+
+	<nav>
+		<ul>
+			<a href='#'><li>UI/UX Design</li></a>
+			<a href='#'><li>Web Programming</li></a>
+			<a href='#'><li>Frontend Development</li></a>
+			<a href='#'><li>Javascript</li></a>
+			<a href='#'><li>Mobile Development</li></a>
+			<a href='#'><li>Backened Development</li></a>
+		</ul>
+	</nav>
 	
+	<main>
+		<section class='book-container'>
+			<div class='book-left-portion, float-left'>
+				<h2>Eloquent Javascript:</h2>
+				<h2>A Modern Introduction to Progamming</h2>
+
+				<p>by <a href='#'>Marjin Haverbeke</a></p>
+				<li><a href="#" class=" btn follow">Follow</a></li>
+				<p class='publication-date'>Published on 2015</p>
+				<p class='edition'>2nd Edition</p>
+
+				<p class='book-description'>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				</p>
+			</div><!--end book-left-portion-->
+
+			<div class='book-right-portion, float-right'>
+				<p>Easy to follow</p>
+				<input type='range' class='easy-to-follow' name='easy-to-follow' min='0' max='10'>
+
+				<p>Comprehensive</p>
+				<input type='range' class='comprehensive' name='comprehensive' min='0' max='10'>
+
+				<p>Enough Examples</p>
+				<input type='range' class='enough-examples' name='enough-examples' min='0' max='10'>
+				<p>
+
+				<p>Rate the Book</p>
+				<hr>
+				<p>Table of Contents</p>
+				<hr>
+				<p>Search Inside</p>
+
+			</div><!--end book-right-portion-->
+
+		</section> <!-- end book-container div -->
+	</main>
+	<footer>
+		<p class='books-lmd-footer'>
+			<span>Books</span>.Modern Developer
+		</p>
+
+		<p>
+			&copy; 2016 Modern Developer Inc.
+			<span>books@moderndeveloper.com</span>
+		</p>
+	</footer>
+
+
 </body>
 </html>
