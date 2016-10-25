@@ -135,6 +135,48 @@ nav a:hover {
 	color: #9cbf2e;
 }
 
+/*section*/
+
+section {
+	width: 1160px;
+	margin: 0 auto;
+	background: white;
+	border-radius: 6px;
+	margin-top: 56px;
+	padding-top: 36px;
+	padding-left: 40px;
+	font-variant-position: .7em;
+}
+
+section h1, h2 {
+	color: #313131;
+	font-weight: 400;
+	margin: 0;
+	font-size: 2em;
+}
+
+section p.author {
+	display: inline-block;
+}
+
+section button.button-follow {
+	font-size: .7em;
+	border-radius: 3px;
+	border: 1px solid #a7c932;
+	padding: 5px 10px;
+	margin-left: 14px;
+}
+
+section a.follow {
+	display: inline-block;
+	color: #a7c932;
+}
+
+section.book-description {
+}
+
+
+
 /*footer*/
 
 footer {
