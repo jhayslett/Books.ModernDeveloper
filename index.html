@@ -1,90 +1,285 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
+
 <head>
-	<meta charset='UTF-8'>
-	<title>Books. Modern Developer</title>
-	<script src="https://use.fontawesome.com/29cc9c7f07.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,300italic|Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta charset="UTF-8">
+    <title>Books. Modern Developer</title>
+    <script src="https://use.fontawesome.com/29cc9c7f07.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,300italic|Roboto+Slab:400,300,700,100" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="mdBooks/css/main.css">
 </head>
 
 <body>
-	<header>
-		<div class="brand">
-			<h1>Books. <span>Modern Developer</span></h1>
-			<h2>The Largest Resource of Web and Mobile Development and Programming Books</h2>
-			<form class='searc-bar' action='index.html' method='post'>
-				<input type='search' id='search' name='search' placeholder='Search books by any keyword or title...'>
-				 <button><i class="fa fa-search fa-2x"></i></button>
-			</form>
-		</div>
-	</header>
+    <header>
+        <div class="brand">
+            <h1>Books. <span>Modern Developer</span></h1>
+            <h2>The Largest Resource of Web and Mobile Development and Programming Books</h2>
+            <form class="searc-bar" action="index.html" method="post">
+                <input type="search" id="search" name="search" placeholder="Search books by any keyword or title...">
+                <button><i class="fa fa-search fa-2x"></i></button>
+            </form>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <a href="#">
+                <li>UI/UX Design</li>
+            </a>
+            <a href="#">
+                <li>Web Programming</li>
+            </a>
+            <a href="#">
+                <li>Frontend Development</li>
+            </a>
+            <a href="#">
+                <li>JavaScript</li>
+            </a>
+            <a href="#">
+                <li>Mobile Development</li>
+            </a>
+            <a href="#">
+                <li>Backend Development</li>
+            </a>
+        </ul>
+    </nav>
+    <main>
 
-	<nav>
-		<ul>
-			<a href='#'><li>UI/UX Design</li></a>
-			<a href='#'><li>Web Programming</li></a>
-			<a href='#'><li>Frontend Development</li></a>
-			<a href='#'><li>Javascript</li></a>
-			<a href='#'><li>Mobile Development</li></a>
-			<a href='#'><li>Backend Development</li></a>
-		</ul>
-	</nav>
-	
-	<main>
-		<section class='book-container'>
-			<div class='book-left-portion, float-left'>
-				<h1>Eloquent JavaScript:</h1>
-				<h2>A Modern Introduction to Progamming</h2>
+        <!-- First Book Section -->
 
-				<p class='author'>by <a href='#'>Marjin Haverbeke</a></p>
-				<button class='button-follow'><a href='#' class='follow'>Follow</a></button>
-				<p class='publication-date'>Published on 2015</p>
-				<p class='edition'>2nd Edition</p>
+        <section class="book-container">
+            <header>
+                <h1>Eloquent JavaScript:</h1>
+                <h1>A Modern Introduction to Progamming</h1>
+                <p class="author">by <a href="#">Marjin Haverbeke</a></p>
+                <button class="button-follow"><a href="#" class="follow">Follow</a></button>
+                <p class="publication-date">Published on 2015</p>
+                <p class="edition">2nd Edition</p>
+            </header>
+            <article class="book-description">
+                <p>
+                    Javascript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, Javascript is a flexible, complex language that you can use to build full-scale applications.
+                </p>
+                <p>
+                    Eloquent Javascript, 2nd Edition dives deep into the Javascript language to show you how to write beautiful effective code.
+                </p>
+                <p><a href="#">Read More</a></p>
+            </article>
+            <article class="book-ratings">
+                <p class="orange-text">Easy to follow</p>
+                <p class="score orange-text">80%</p>
+                <div class="status-bar"><span class="orange-bg eight-zero"></span></div>
+                <p class="green-text">Comprehensive</p>
+                <p class="score green-text">75%</p>
+                <div class="status-bar"><span class="green-bg seven-five"></span></div>
+                <p class="blue-text">Enough Examples</p>
+                <p class="score blue-text">95%</p>
+                <div class="status-bar"><span class="blue-bg nine-five"></span></div>
+                <div class="links">
+                    <a href="#">Rate the Book<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    <hr>
+                    <a href="#">Table of Contents<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    <hr>
+                    <a href="#">Search Inside<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+            </article>
+            <article class="book-image">
+                <img src="/mdBooks/images/books.MD_eloquent_javascript_book_cover.jpg">
+            </article>
+            <footer>
+                <img src="/mdBooks/images/books.MD_gumroad_logo.jpg">
+                <p class="cost">$28.40</p>
+                <img src="/mdBooks/images/books.MD_amazon_logo.jpg">
+                <p class="cost">$29.65</p>
+                <img src="/mdBooks/images/books.MD_manning_logo.jpg">
+                <p class="cost">$28.70</p>
+                <img class="bookmark" src="/mdBooks/images/books.MD_bookmark_logo.jpg">
+            </footer>
+        </section>
 
-				<p class='book-description'>
-					Javascript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, Javascript is a flexible, complex language that you can use to build full-scale applications.
-				</p>
-				<p class='book-description'>
-					Eloquent Javascript, 2nd Edition dives deep into the Javascript language to show you how to write beautiful effective code.
-				</p>
-				<a class="read-more">
-				Read More
-				</a>
-			</div><!--end book-left-portion-->
+        <!-- Second Book Section -->
 
-			<div class='book-right-portion, float-right'>
-				<p>Easy to follow</p>
-				<input type='range' class='easy-to-follow' name='easy-to-follow' min='0' max='10'>
+        <section class="book-container">
+            <header>
+                <h1>Javascript and JQuery: Interactive Front-End</h1>
+                <h1>Web Development</h1>
+                <p class="author">by <a href="#">Marjin Haverbeke</a></p>
+                <button class="button-follow"><a href="#" class="follow">Follow</a></button>
+                <p class="publication-date">Published on 2016</p>
+                <p class="edition">1st Edition</p>
+            </header>
+            <article class="book-description">
+                <p>
+                    In Javascript & JQuery renowned author Jon Duckett discards the traditional programming book template and approaches writing code in a more relevant, less intimidating way.
+                </p>
+                <p>
+                    Full-color and packed with instructional graphics and photos, his books have gained a loyal following by illustrating programming in a way both instructive for newcomers and invaluable for seasoned coders.
+                </p>
+                <p><a href="#">Read More</a></p>
+            </article>
+            <article class="book-ratings">
+                <p class="orange-text">Easy to follow</p>
+                <p class="score orange-text">80%</p>
+                <div class="status-bar"><span class="orange-bg eight-zero"></span></div>
+                <p class="green-text">Comprehensive</p>
+                <p class="score green-text">75%</p>
+                <div class="status-bar"><span class="green-bg seven-five"></span></div>
+                <p class="blue-text">Enough Examples</p>
+                <p class="score blue-text">95%</p>
+                <div class="status-bar"><span class="blue-bg nine-five"></span></div>
+                <div class="links">
+                    <a href="#">Rate the Book<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    <hr>
+                    <a href="#">Table of Contents<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    <hr>
+                    <a href="#">Search Inside<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+            </article>
+            <article class="book-image">
+                <img src="/mdBooks/images/books.MD_javascript_and_jquery_book_cover.jpg">
+            </article>
+            <footer>
+                <button class="download">Download the Book</button>
+            </footer>
+        </section>
 
-				<p>Comprehensive</p>
-				<input type='range' class='comprehensive' name='comprehensive' min='0' max='10'>
+        <!-- Third Book Section -->
 
-				<p>Enough Examples</p>
-				<input type='range' class='enough-examples' name='enough-examples' min='0' max='10'>
-				<p>
+        <section class="book-container">
+            <article class="overlay">
+                <div class="overlay-main">
+                    <input type="search" name="boon-contents">
+                    <ul>
+                        <li>... Eloquent <mark>JavaScript,</mark> 2nd Edition. Copyright &copy; 2015 by Marij...<span>8</span></li>
+                        <li>... Language 191 PART II: BROWSER Chapter 12: <mark>JavaScript</mark> and the ...<span>15</span></li>
+                        <li>... BROWSER 12 JAVASCRIPT AND THE BROWSER 207 Networks...<span>19</span></li>
+                        <li>... Templates 387 The Unscriptables 387 22 <mark>JAVASCRIPT</mark>...<span>28</span></li>
+                        <li>... Multiple Promises 421 Forms and Form Fields 421 A <mark>JavaScript</mark> W...<span>36</span></li>
+                        <li>... there, if you know where to look. One such language, <mark>JavaScript</mark>, is ...<span>41</span></li>
+                        <li>... Here is the same program in <mark>JavaScript</mark>: var total = 0, count = 1; whil...<span>53</span></li>
+                        <li>... What is JavaScript? <mark>JavaScript</mark> was introduced back in 1995 as a wa...<span>58</span></li>
+                        <li>... EloquEnt <mark>JavaScript</mark>, 2nd Edition. Copyright &copy; 2015 by Marij...<span>61</span></li>
+                        <li>... Language 191 PART II: BROWSER Chapter 12: <mark>JavaScript</mark> and the ...<span>63</span></li>
+                    </ul>
+                </div>
+                <div class="overlay-menu">
+                    <ul>
+                        <li>X</li>
+                        <li>Search Inside</li>
+                        <li>Table of Contents</li>
+                        <li>Rate the Book</li>
+                    </ul>
+                </div>
+            </article>
+            <header>
+                <h1>Eloquent JavaScript:</h1>
+                <h1>A Modern Introduction to Progamming</h1>
+                <p class="author">by <a href="#">Marjin Haverbeke</a></p>
+                <button class="button-follow"><a href="#" class="follow">Follow</a></button>
+                <p class="publication-date">Published on 2015</p>
+                <p class="edition">2nd Edition</p>
+            </header>
+            <article class="book-description">
+                <p>
+                    Javascript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, Javascript is a flexible, complex language that you can use to build full-scale applications.
+                </p>
+                <p>
+                    Eloquent Javascript, 2nd Edition dives deep into the Javascript language to show you how to write beautiful effective code.
+                </p>
+                <p><a href="#">Read More</a></p>
+            </article>
+            <article class="book-ratings">
+                <p class="orange-text">Easy to follow</p>
+                <p class="score orange-text">80%</p>
+                <div class="status-bar"><span class="orange-bg eight-zero"></span></div>
+                <p class="green-text">Comprehensive</p>
+                <p class="score green-text">75%</p>
+                <div class="status-bar"><span class="green-bg seven-five"></span></div>
+                <p class="blue-text">Enough Examples</p>
+                <p class="score blue-text">95%</p>
+                <div class="status-bar"><span class="blue-bg nine-five"></span></div>
+                <div class="links">
+                    <a href="#">Rate the Book<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    <hr>
+                    <a href="#">Table of Contents<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    <hr>
+                    <a href="#">Search Inside<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+            </article>
+            <article class="book-image">
+                <img src="/mdBooks/images/books.MD_eloquent_javascript_book_cover.jpg">
+            </article>
+            <footer>
+                <img src="/mdBooks/images/books.MD_amazon_logo.jpg">
+                <p class="cost">$29.65</p>
+                <img src="/mdBooks/images/books.MD_manning_logo.jpg">
+                <p class="cost">$28.70</p>
+                <img class="bookmark" src="/mdBooks/images/books.MD_bookmark_logo.jpg">
+            </footer>
+        </section>
 
-				<p>Rate the Book</p>
-				<hr>
-				<p>Table of Contents</p>
-				<hr>
-				<p>Search Inside</p>
 
-			</div><!--end book-right-portion-->
+            <!-- Fourth Book Section -->
 
-		</section> <!-- end book-container div -->
-	</main>
-	<footer>
-		<p class='books-lmd-footer'>
-			<span>Books</span>.Modern Developer
-		</p>
+        <section class="book-container">
+            <header>
+                <h1>Learning PHP, MySQL & JavaScript: With jQuery,</h1>
+                <h1>CSS & HTML5</h1>
+                <p class="author">by <a href="#">Marjin Haverbeke</a></p>
+                <button class="button-follow"><a href="#" class="follow">Follow</a></button>
+                <p class="publication-date">Published on 2015</p>
+                <p class="edition">4th Edition</p>
+            </header>
+            <article class="book-description">
+                <p>
+                    Build interactive, data-driven websites with the potent combination of open source technologies and web standards, even if you have only basic HTML knowledge. With this popular hands-on guide, you'll tackle dynamic web programming with the help of today's core technologies: PHP, MySQL, Javascript, jQuery, CSS, and HTML5.
+                </p>
+                <p>
+                    By discussing JavaScript and jQuery in a single text, Duckett ensures you will quickly be writing your own...
+                </p>
+                <p><a href="#">Read More</a></p>
+            </article>
+            <article class="book-ratings">
+                <p class="orange-text">Easy to follow</p>
+                <p class="score orange-text">80%</p>
+                <div class="status-bar"><span class="orange-bg eight-zero"></span></div>
+                <p class="green-text">Comprehensive</p>
+                <p class="score green-text">75%</p>
+                <div class="status-bar"><span class="green-bg seven-five"></span></div>
+                <p class="blue-text">Enough Examples</p>
+                <p class="score blue-text">95%</p>
+                <div class="status-bar"><span class="blue-bg nine-five"></span></div>
+                <div class="links">
+                    <a href="#">Rate the Book<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    <hr>
+                    <a href="#">Table of Contents<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    <hr>
+                    <a href="#">Search Inside<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+            </article>
+            <article class="book-image">
+                <img src="/mdBooks/images/books.MD_learning_php_mysql_javascript_book_cover.jpg">
+            </article>
+            <footer>
+                <img src="/mdBooks/images/books.MD_gumroad_logo.jpg">
+                <p class="cost">$26.30</p>
+                <img src="/mdBooks/images/books.MD_amazon_logo.jpg">
+                <p class="cost">$24.80</p>
+                <img src="/mdBooks/images/books.MD_manning_logo.jpg">
+                <p class="cost">$25.20</p>
+                <img class="bookmark" src="/mdBooks/images/books.MD_bookmark_logo.jpg">
+            </footer>
+        </section>
 
-		<p class="copyright">
-			&copy; 2016 Modern Developer Inc.
-		</p>
-		<p class="contact-email">books@moderndeveloper.com</p>
-	</footer>
-
-
+    </main>
+    <footer>
+        <p class="books-lmd-footer">
+            <span>Books</span>.Modern Developer
+        </p>
+        <p class="copyright">
+            &copy; 2016 Modern Developer Inc.
+        </p>
+        <p class="contact-email">books@moderndeveloper.com</p>
+    </footer>
 </body>
+
 </html>
