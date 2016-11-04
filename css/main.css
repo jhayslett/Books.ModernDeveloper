@@ -18,7 +18,7 @@ a {
 
 /*header*/
 
-header {
+body > header {
 	background-image: url("../images/books_header_bg.jpg");
 	background-position: 1600px 0px;
 	width: 100%;
@@ -33,23 +33,23 @@ header {
     width: 700px;
 }
 
-header h1 {
+body > header h1 {
 	padding-top: 14px;
 	display: inline-block;
 	margin: 5px 0 2px 0px;
 	color: #fff;
 	font-family: 'Roboto Slab', serif;
 	font-weight: 400;
-	font-size: 1.9em;
+	font-size: 1.8em;
 	text-align: left;
 	padding-left: 100px;
 }
 
-header h1 span {
+body > header h1 span {
 	font-weight: 100;
 }
 
-header h2 {
+body > header h2 {
 	color: #6b8607;
 	font-weight: 400;
 	font-size: 1em;
@@ -57,7 +57,7 @@ header h2 {
 	margin: 2px 0px 25px 0px;
 }
 
-header input {
+body > header input {
 	width: 600px;
 	background-color: #cedd9a;
 	border: none;
@@ -92,7 +92,7 @@ header input {
     ;
 }
 
-button {
+header button {
     background-color: #fff;
     border: 0;
     border-bottom-right-radius: 3px;
@@ -140,19 +140,42 @@ nav a:hover {
 section {
 	width: 1160px;
 	margin: 0 auto;
-	background: white;
+	background: #fff;
 	border-radius: 6px;
-	margin-top: 56px;
+	margin-top: 52px;
+	margin-bottom: 100px;
 	padding-top: 36px;
 	padding-left: 40px;
 	font-variant-position: .7em;
+	position: relative;
+	height: 437px;
+}
+
+section:nth-child(n+2) {
+	margin-top: 170px;
+}
+
+section header {
+	max-width: 800px;
+}
+
+section header p {
+	display: inline-block;
+	font-size: .9em;
 }
 
 section h1, h2 {
 	color: #313131;
 	font-weight: 400;
 	margin: 0;
-	font-size: 2em;
+	font-size: 1.8em;
+	margin-bottom: 2px;
+}
+
+.publication-date, .edition {
+	color: #cecece;
+	padding-left: 15px;
+	padding-right: 10px;
 }
 
 section p.author {
@@ -172,19 +195,232 @@ section a.follow {
 	color: #a7c932;
 }
 
-section.book-description {
+section article {
+	display: inline-block;
+	vertical-align: top;
 }
 
+.book-description {
+	width: 425px;
+	font-weight: 400;
+	line-height: 1.6;
+	color: #616161;
+	padding-right: 40px;
+}
 
+.book-ratings {
+	padding-left: 20px;
+	width: 280px;
+	border-left: 1px solid #dedede;
+}
+
+.book-ratings > p {
+	font-size: .9em;
+	font-weight: 400;
+	display: inline-block;
+	margin: 5px 0;
+	padding-left: 7px;
+	padding-top: 5px;
+}
+
+.book-ratings div {
+	margin-bottom: 10px;
+}
+
+.score {
+	float: right;
+}
+
+.book-image {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.status-bar {
+	height: 4px;
+	position: relative;
+	background-color: #f3f3f3;
+	border-radius: 5px;
+}
+
+.status-bar > span {
+	display: block;
+	border-radius: 5px;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.orange-text {
+	color: #f7be26;
+}
+
+.green-text {
+	color: #75c36a;
+}
+
+.blue-text {
+	color: #5ac9e3;
+}
+
+.orange-bg {
+	background-color: #f7be26;
+}
+
+.green-bg {
+	background-color: #75c36a;
+}
+
+.blue-bg {
+	background-color: #5ac9e3;
+}
+
+.nine-five {
+	width: 95%;
+}
+
+.eight-zero {
+	width: 80%;
+}
+
+.seven-five {
+	width: 75%;
+}
+
+.links {
+	font-size: .95em;
+	margin: 0;
+	padding-top: 25px;
+	margin-top: 40px;
+}
+
+.links a {
+	padding-left: 5px;
+}
+
+.links i {
+	float: right;
+	padding-right: 5px;
+}
+
+.links hr {
+	border: .01em solid #dfdfdf;
+}
+
+section footer {
+	background-color: #f5f5f5;
+	width: 100%;
+	margin-top: 60px;
+	margin-left: 0;	
+	position: relative;
+	left: -40px;
+	z-index: 10;
+}
+
+section footer img {
+	z-index: 10;
+}
+
+.download {
+	background-color: #98c400;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 10px 40px;
+    outline: none;
+}
+
+.cost {
+	display: inline-block;
+	position: relative;
+	right: 15px;
+	background-color: #fff;
+	padding: 10px 15px;
+	color: #9cbf2e;
+	font-size: 1.2em;
+	bottom: 14px;
+	border-radius: 2px;
+	z-index: 2;
+}
+
+.bookmark {
+	float: right;
+}
+
+/*book overlay*/
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(230,230,230,.8);
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.overlay input {
+	width: 90%;
+	border: 1px solid #e5e5e5;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.3em;
+	padding: 15px 0px 15px 20px;
+	color: #777;
+	outline: none;
+	border-radius: 3px;
+	margin-top: 30px;
+	margin-bottom: 28px;
+	margin-left: 15px;
+}
+
+.overlay ul {
+	list-style: none;
+}
+
+.overlay-main {
+	position: relative;
+	left: 595px;
+	background-color: #fff;
+	width: 600px;
+	border: 3px solid #cbe9e7;
+	border-radius: 3px;
+}
+
+.overlay-main span {
+	float: right;
+	padding-right: 20px;
+}
+
+.overlay-menu {
+	-ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    position: relative;
+    top: 271px;
+    left: 619px;
+}
+
+.overlay-menu li {
+	color: #02a5cb;
+	display: inline-block;
+	padding: 10px 16px;
+}
+
+.overlay-menu li:hover {
+	background-color: #cbe9e7;
+}
 
 /*footer*/
 
-footer {
+body > footer {
 	height: 180px;
 	background-color: #3a3a3a;
+	margin-top: 150px;
 }
 
-footer .books-lmd-footer {
+body > footer .books-lmd-footer {
 	float: left;
 	background-image: url("../images/books.MD_footer_logo_icon.png");
 	background-repeat: no-repeat;
@@ -198,11 +434,11 @@ footer .books-lmd-footer {
 	font-size: 1.1em;
 }
 
-footer .books-lmd-footer span {
+body > footer .books-lmd-footer span {
 	color: #a9a9a9;
 }
 
-footer .copyright {
+body > footer .copyright {
 	margin-right: 35px;
 	float: right;
 	color: #727272;
@@ -211,7 +447,7 @@ footer .copyright {
 	font-size: .9em;
 }
 
-footer .contact-email {
+body > footer .contact-email {
 	font-size: .9em;
 	clear: right;
 	float: right;
