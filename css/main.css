@@ -71,22 +71,22 @@ body > header input {
 	margin-bottom: 28px;
 }
 
-::-webkit-input-placeholder {
+body > header::-webkit-input-placeholder {
     color: #6b8607;
     opacity: 0.5;
 }
 
-:-ms-input-placeholder {
+body > header:-ms-input-placeholder {
     color: #6b8607;
     opacity: 0.5;
 }
 
-::-moz-placeholder {
+body > header::-moz-placeholder {
     color: #6b8607;
     opacity: 0.5;
 }
 
-:-moz-placeholder {
+body > header:-moz-placeholder {
     color: #6b8607;
     opacity: 0.5;
     ;
@@ -366,11 +366,12 @@ section footer img {
 	border: 1px solid #e5e5e5;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.3em;
-	padding: 15px 0px 15px 20px;
+	font-weight: 200;
+	padding: 10px 0px 10px 20px;
 	color: #777;
 	outline: none;
 	border-radius: 3px;
-	margin-top: 30px;
+	margin-top: 37px;
 	margin-bottom: 28px;
 	margin-left: 15px;
 }
@@ -381,11 +382,14 @@ section footer img {
 
 .overlay-main {
 	position: relative;
+	color: #111;
 	left: 595px;
 	background-color: #fff;
 	width: 600px;
-	border: 3px solid #cbe9e7;
-	border-radius: 3px;
+	border: 5px solid #cbe9e7;
+	border-radius: 5px;
+	font-weight: 300;
+	line-height: 2;
 }
 
 .overlay-main span {
@@ -398,7 +402,7 @@ section footer img {
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
     transform: rotate(90deg);
     position: relative;
-    top: 271px;
+    top: 51px;
     left: 619px;
 }
 
@@ -410,6 +414,12 @@ section footer img {
 
 .overlay-menu li:hover {
 	background-color: #cbe9e7;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.overlay mark {
+	background-color: #d5edd2;
 }
 
 /*footer*/
